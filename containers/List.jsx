@@ -1,6 +1,7 @@
 import { LaureateCard } from "../components/index";
 import { Category } from "./index";
 import { useEffect, useState } from "react";
+import styles from "../styles/containers/List.module.css";
 const List = ({ data }) => {
   const [uniqueYears, setUniqueYears] = useState([]);
   useEffect(() => {
@@ -11,7 +12,7 @@ const List = ({ data }) => {
   return (
     <>
       {uniqueYears.map((item) => (
-        <div key={item}>
+        <div className={styles.container} key={item}>
           <h1>{item}</h1>
           <Category year={item} data={data} />
         </div>

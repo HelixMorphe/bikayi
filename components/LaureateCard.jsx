@@ -4,7 +4,7 @@ const LaureateCard = ({ data, rank }) => {
   const { firstname, surname, motivation } = data;
   return (
     <div className={styles.container}>
-      <h1>#{rank + 1}</h1>
+      <h1>{rank + 1}.</h1>
       <div className={styles.details}>
         <h1>
           {firstname} {surname}

@@ -1,0 +1,11 @@
+.container {
+}
+@media screen and (min-width: 700px) {
+  .container {
+    display: flex;
+    /* border: black 2px solid; */
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

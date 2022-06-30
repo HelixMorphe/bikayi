@@ -1,10 +1,10 @@
 import React from "react";
 import { LaureateCard } from "../components";
-
+import styles from "../styles/containers/Laureate.module.css";
 const Laureate = ({ data }) => {
   console.log(data);
   return (
-    <div>
+    <div className={styles.container}>
       {data?.map((item, index) => (
         <LaureateCard data={item} rank={index} />
       ))}
