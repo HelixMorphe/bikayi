@@ -1,9 +1,8 @@
-import { Navbar, Filter, List } from "../containers/index";
+import { Navbar, List } from "../containers/index";
 const All = ({ data }) => {
   return (
     <div className="section__padding">
       {/* <Navbar /> */}
-      {/* <Filter /> */}
       <List data={data} />
     </div>
   );

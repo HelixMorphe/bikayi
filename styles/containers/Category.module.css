@@ -17,7 +17,7 @@
   text-transform: capitalize;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 880px) {
   .categoryWrapper {
     display: flex;
     justify-content: space-between;
@@ -26,7 +26,7 @@
   .categoryWrapper > p {
   }
   .categoryWrapper > div {
-    width: 50%;
+    width: 40%;
   }
   .LaureateWrapper {
     width: 100%;

@@ -2,8 +2,11 @@ import React from "react";
 import styles from "../styles/containers/Category.module.css";
 import Laureate from "./Laureate";
 
-const Category = ({ year, data }) => {
-  const filteredData = data.filter((item) => item.year === year);
+const Category = ({ year, data, category }) => {
+  let filteredData = data.filter((item) => item.year === year);
+  // console.log(category);
+  if (category && category != "All")
+    filteredData = filteredData.filter((item) => item.category === category);
 
   return (
     <div className={styles.container}>
