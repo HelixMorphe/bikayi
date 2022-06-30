@@ -8,8 +8,9 @@ const List = ({ data }) => {
   const [yearsFilter, setYearsFilter] = useState([]);
   useEffect(() => {
     const years = [...new Set(data.map((item) => item.year))];
-    setUniqueYears(years);
-    setYearsFilter(years);
+    const slicedYears = years.filter((year) => parseInt(year) < 2019);
+    setUniqueYears(slicedYears);
+    setYearsFilter(slicedYears);
   }, [data]);
   if (yearsFilter.length == 0) return <h1>Loading...</h1>;
   return (
