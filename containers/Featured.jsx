@@ -31,7 +31,7 @@ const Featured = ({ data }) => {
       <h1>Featured</h1>
       <div className={styles.personWrapper}>
         {filteredData.map((item) => (
-          <div className={styles.person}>
+          <div key={item.id} className={styles.person}>
             <h2>
               {item.firstname} {item.surname}
             </h2>
