@@ -1,0 +1,35 @@
+.container {
+  /* border: 2px solid gray; */
+  border-radius: 10px;
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-color: var(--color-bg2);
+  margin: 1rem 0;
+}
+.container > h1 {
+  font-size: 2rem;
+  font-weight: 200;
+  color: var(--color-primary);
+  padding-right: 1rem;
+  margin-right: 1rem;
+  border-right: 1px solid gray;
+}
+.details {
+  /* border: 1px solid black; */
+}
+.details > h1 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+}
+.details > p {
+  font-size: 12px;
+  color: var(--color-text);
+  font-family: var(--font-heading);
+  font-style: italic;
+}
