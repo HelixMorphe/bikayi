@@ -1,3 +1,4 @@
+import Featured from "../containers/Featured";
 import { Navbar, List } from "../containers/index";
 const All = ({ data }) => {
   return (
@@ -5,6 +6,7 @@ const All = ({ data }) => {
       <Navbar />
       <div className="section__padding">
         <List data={data} />
+        <Featured data={data} />
       </div>
     </div>
   );

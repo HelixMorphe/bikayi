@@ -1,0 +1,33 @@
+.container {
+  border-top: 1px solid black;
+}
+.container > h1 {
+  margin: 2rem 0;
+  padding-bottom: 2rem;
+  border-bottom: solid gray 1px;
+  /* display: block; */
+  font-weight: 200;
+  color: var(--color-primary);
+}
+.personWrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  flex-direction: row;
+  font-family: var(--font-heading);
+  color: var(--color-text);
+}
+.person {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+.person > h2 {
+  flex: 1;
+}
+.person > p {
+  flex: 1;
+  text-align: start;
+}
