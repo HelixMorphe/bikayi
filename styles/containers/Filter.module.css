@@ -3,6 +3,7 @@
   justify-content: space-between;
 }
 .selectContainer {
+  cursor: pointer;
   padding: 0.5rem;
   outline: none;
   background: transparent;

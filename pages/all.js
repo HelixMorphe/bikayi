@@ -1,9 +1,11 @@
 import { Navbar, List } from "../containers/index";
 const All = ({ data }) => {
   return (
-    <div className="section__padding">
-      {/* <Navbar /> */}
-      <List data={data} />
+    <div>
+      <Navbar />
+      <div className="section__padding">
+        <List data={data} />
+      </div>
     </div>
   );
 };
