@@ -20,22 +20,34 @@ const Filter = ({ uniqueYears, setYearsFilter, setCategoryFilter }) => {
     }
   };
   const handleCategoryChange = (e) => {
-    console.log(e.target.value);
     setCategoryFilter(e.target.value);
   };
   return (
     <div className={styles.container}>
-      <select onChange={handleChange}>
+      <select className={styles.selectContainer} onChange={handleChange}>
+        <option disabled selected>
+          --select year--
+        </option>
         <option value={null}>All</option>
         {yearArray.map((item) => (
-          <option value={`${item}`}>{item}</option>
+          <option key={item} value={`${item}`}>
+            {item}
+          </option>
         ))}
       </select>
 
-      <select onChange={handleCategoryChange}>
+      <select
+        className={styles.selectContainer}
+        onChange={handleCategoryChange}
+      >
+        <option disabled selected>
+          --select category--
+        </option>
         <option value={null}>All</option>
         {categoryArray.map((item) => (
-          <option value={item}>{item}</option>
+          <option key={item} value={item}>
+            {item}
+          </option>
         ))}
       </select>
     </div>

@@ -5,7 +5,7 @@ const Laureate = ({ data }) => {
   return (
     <div className={styles.container}>
       {data?.map((item, index) => (
-        <LaureateCard data={item} rank={index} />
+        <LaureateCard key={item.id} data={item} rank={index} />
       ))}
     </div>
   );

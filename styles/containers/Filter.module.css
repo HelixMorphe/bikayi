@@ -2,3 +2,13 @@
   display: flex;
   justify-content: space-between;
 }
+.selectContainer {
+  padding: 0.5rem;
+  outline: none;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid black;
+}
+.selectContainer > option {
+  background-color: var(--color-bg);
+}

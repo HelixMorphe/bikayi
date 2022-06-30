@@ -11,7 +11,7 @@ const Category = ({ year, data, category }) => {
   return (
     <div className={styles.container}>
       {filteredData.map((item) => (
-        <div className={styles.categoryWrapper}>
+        <div key={item.category} className={styles.categoryWrapper}>
           <p>{item.category}</p>
           <div className={styles.LaureateWrapper}>
             <Laureate data={item.laureates} />
