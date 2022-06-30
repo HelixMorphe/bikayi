@@ -9,7 +9,7 @@
 .categoryWrapper > p {
   /* text-align: center; */
   /* text-decoration: underline; */
-  font-size: 24px;
+  font-size: 32px;
   /* font-family: var(--font-heading); */
   /* font-weight: 900; */
   font-weight: 400;
@@ -24,6 +24,7 @@
     align-items: center;
   }
   .categoryWrapper > p {
+    /* font-weight: 100; */
   }
   .categoryWrapper > div {
     width: 40%;

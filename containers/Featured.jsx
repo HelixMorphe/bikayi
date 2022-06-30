@@ -24,8 +24,7 @@ const Featured = ({ data }) => {
 
     setFilteredData(array);
   }, []);
-  if (filteredData.length == 0) return <div>Loadin</div>;
-  console.log(filteredData);
+  if (filteredData.length == 0) return <div>Loading..</div>;
   return (
     <div className={styles.container}>
       <h1>Featured</h1>
